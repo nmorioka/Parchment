@@ -694,7 +694,7 @@ open class PagingViewController<T: PagingItem>:
       pageViewController.scrollReverse(animated: animated, completion: nil)
       pageViewController.view.layoutIfNeeded()
     } else if currentPagingItem != pagingItem {
-      selectViewController(pagingItem, direction: direction)
+      selectViewController(pagingItem, direction: direction, animated: animated)
     }
   }
   
